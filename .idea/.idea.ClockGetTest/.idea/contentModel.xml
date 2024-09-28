@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\user\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\user\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ClockGetTest.1100368027.00" t="ExcludeRecursive" />
+    <e p="D:\UNITY\PROJECTS\ClockGetTest" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Clock" t="Include">
+            <e p="Clock.cs" t="Include" />
+            <e p="ClockView.cs" t="Include" />
+          </e>
+          <e p="ClockData.cs" t="Include" />
+          <e p="DI" t="Include">
+            <e p="Scope.cs" t="Include" />
+          </e>
+          <e p="EntryPoint.cs" t="Include" />
+        </e>
+        <e p="VContainer" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Diagnostics" t="Include">
+              <e p="SplitterGUILayout.cs" t="Include" />
+              <e p="TypeNameHelper.cs" t="Include" />
+              <e p="VContainerDiagnosticsTreeView.cs" t="Include" />
+              <e p="VContainerDiagnosticsWindow.cs" t="Include" />
+              <e p="VContainerInstanceTreeView.cs" t="Include" />
+            </e>
+            <e p="ParentReferencePropertyDrawer.cs" t="Include" />
+            <e p="ScriptTemplateModifier.cs" t="Include" />
+            <e p="VContainer.Editor.asmdef" t="Include" />
+          </e>
+          <e p="Runtime" t="Include">
+            <e p="Annotations" t="Include">
+              <e p="AwaitableExtensions.cs" t="Include" />
+              <e p="IAsyncStartable.cs" t="Include" />
+              <e p="IFixedTickable.cs" t="Include" />
+              <e p="IInitializable.cs" t="Include" />
+              <e p="ILateTickable.cs" t="Include" />
+              <e p="InjectAttribute.cs" t="Include" />
+              <e p="IPostFixedTickable.cs" t="Include" />
+              <e p="IPostInitializable.cs" t="Include" />
+              <e p="IPostLateTickable.cs" t="Include" />
+              <e p="IPostStartable.cs" t="Include" />
+              <e p="IPostTickable.cs" t="Include" />
+              <e p="IStartable.cs" t="Include" />
+              <e p="ITickable.cs" t="Include" />
+            </e>
+            <e p="AssemblyInfo.cs" t="Include" />
+            <e p="Container.cs" t="Include" />
+            <e p="ContainerBuilder.cs" t="Include" />
+            <e p="ContainerBuilderExtensions.cs" t="Include" />
+            <e p="Diagnostics" t="Include">
+              <e p="DiagnosticsCollector.cs" t="Include" />
+              <e p="DiagnosticsContext.cs" t="Include" />
+              <e p="DiagnosticsInfo.cs" t="Include" />
+              <e p="RegisterInfo.cs" t="Include" />
+              <e p="ResolveInfo.cs" t="Include" />
+            </e>
+            <e p="IInjector.cs" t="Include" />
+            <e p="IInjectParameter.cs" t="Include" />
+            <e p="IInstanceProvider.cs" t="Include" />
+            <e p="Internal" t="Include">
+              <e p="BuilderCallbackDisposable.cs" t="Include" />
+              <e p="CappedArrayPool.cs" t="Include" />
+              <e p="CompositeDisposable.cs" t="Include" />
+              <e p="ContainerLocal.cs" t="Include" />
+              <e p="FixedTypeKeyHashTable.cs" t="Include" />
+              <e p="FreeList.cs" t="Include" />
+              <e p="FuncRegistrationBuilder.cs" t="Include" />
+              <e p="InjectorCache.cs" t="Include" />
+              <e p="InjectParameter.cs" t="Include" />
+              <e p="InstanceProviders" t="Include">
+                <e p="CollectionInstanceProvider.cs" t="Include" />
+                <e p="ContainerInstanceProvider.cs" t="Include" />
+                <e p="ContainerLocalInstanceProvider.cs" t="Include" />
+                <e p="ExistingInstanceProvider.cs" t="Include" />
+                <e p="FuncInstanceProvider.cs" t="Include" />
+                <e p="InstanceProvider.cs" t="Include" />
+                <e p="OpenGenericInstanceProvider.cs" t="Include" />
+              </e>
+              <e p="InstanceRegistrationBuilder.cs" t="Include" />
+              <e p="ListPool.cs" t="Include" />
+              <e p="OpenGenericRegistrationBuilder.cs" t="Include" />
+              <e p="ReflectionInjector.cs" t="Include" />
+              <e p="RuntimeTypeCache.cs" t="Include" />
+              <e p="TypeAnalyzer.cs" t="Include" />
+              <e p="TypeKeyHashTable2.cs" t="Include" />
+            </e>
+            <e p="IObjectResolverExtensions.cs" t="Include" />
+            <e p="Registration.cs" t="Include" />
+            <e p="RegistrationBuilder.cs" t="Include" />
+            <e p="Registry.cs" t="Include" />
+            <e p="UNITY" t="Include">
+              <e p="ActionInstaller.cs" t="Include" />
+              <e p="ComponentRegistrationBuilder.cs" t="Include" />
+              <e p="ContainerBuilderUnityExtensions.cs" t="Include" />
+              <e p="DisposeLoopItem.cs" t="Include" />
+              <e p="EntryPointDispatcher.cs" t="Include" />
+              <e p="EntryPointExceptionHandler.cs" t="Include" />
+              <e p="IInstaller.cs" t="Include" />
+              <e p="InstanceProviders" t="Include">
+                <e p="ExistingComponentProvider.cs" t="Include" />
+                <e p="FindComponentProvider.cs" t="Include" />
+                <e p="NewGameObjectProvider.cs" t="Include" />
+                <e p="PrefabComponentProvider.cs" t="Include" />
+                <e p="SystemInstanceProvider.cs" t="Include" />
+                <e p="UnmanagedSystemInstanceProvider.cs" t="Include" />
+                <e p="WorldInstanceProvider.cs" t="Include" />
+              </e>
+              <e p="LifetimeScope.AwakeScheduler.cs" t="Include" />
+              <e p="LifetimeScope.cs" t="Include" />
+              <e p="ObjectResolverUnityExtensions.cs" t="Include" />
+              <e p="ParentReference.cs" t="Include" />
+              <e p="PlayerLoopHelper.cs" t="Include" />
+              <e p="PlayerLoopItem.cs" t="Include" />
+              <e p="PlayerLoopRunner.cs" t="Include" />
+              <e p="SystemRegistrationBuilder.cs" t="Include" />
+              <e p="UnmanagedSystemReference.cs" t="Include" />
+              <e p="UnmanagedSystemRegistrationBuilder.cs" t="Include" />
+              <e p="VContainerSettings.cs" t="Include" />
+              <e p="WorldConfigurationHelper.cs" t="Include" />
+              <e p="WorldRegistrationBuilder.cs" t="Include" />
+            </e>
+            <e p="VContainer.asmdef" t="Include" />
+            <e p="VContainerException.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="ClockGetTest.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="VContainer.csproj" t="IncludeRecursive" />
+      <e p="VContainer.Editor.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>
