@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Clock
+namespace ClockTime
 {
     public class ClockView : MonoBehaviour
     {
@@ -8,10 +8,9 @@ namespace Clock
         [SerializeField] private GameObject _hoursArrow;
         [SerializeField] private GameObject _minutesArrow;
         [SerializeField] private GameObject _secondsArrow;
-
-
         public GameObject HoursArrow => _hoursArrow;
         public GameObject MinutesArrow => _minutesArrow;
         public GameObject SecondsArrow => _secondsArrow;
+        
     }
 }

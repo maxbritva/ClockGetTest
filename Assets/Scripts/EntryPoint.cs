@@ -1,26 +1,22 @@
-﻿using VContainer.Unity;
+﻿using ClockTime;
+using ClockTime.SyncServer;
+using VContainer.Unity;
 
-namespace DefaultNamespace
+public class EntryPoint: IInitializable
 {
-    public class EntryPoint: IInitializable
+    private ISyncServerTime _syncServerTime;
+    private Clock _clock;
+
+    public EntryPoint(Clock clock, ISyncServerTime syncServerTime)
     {
-        private ClockData _clockData;
-        private Clock.Clock _clock;
+        _clock = clock;
+        _syncServerTime = syncServerTime;
+    }
 
-        public EntryPoint(ClockData clockData, Clock.Clock clock)
-        {
-            _clockData = clockData;
-            _clock = clock;
-        }
 
-        public Clock.Clock Clock => _clock;
-
-        public ClockData ClockData => _clockData;
-
-        public async void Initialize()
-        {
-           await _clockData.GetDataFromServer();
-           await _clock.UpdateTime();
-        }
+    public async void Initialize()
+    { 
+        await _syncServerTime.GetDataFromServer();
+        await _clock.UpdateTime();
     }
 }

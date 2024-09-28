@@ -1,24 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="23652bb6-f465-4380-9522-9b72f59494d9" name="Default Changelist" comment="" />
+    <list default="true" id="23652bb6-f465-4380-9522-9b72f59494d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime/SyncServer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime/SyncServer/ISyncServerTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime/SyncServer/ISyncServerTime.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime/SyncServer/SyncServerTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime/SyncServer/SyncServerTime.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/DataTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/IDateTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/IDateTime.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ISetTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ISetTime.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/IUpdateTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/IUpdateTime.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClockGetTest/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClockGetTest/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClockGetTest/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClockGetTest/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ClockGetTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ClockGetTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clock.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clock/Clock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime/Clock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clock/Clock.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime/Clock.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clock/ClockView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime/ClockView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clock/ClockView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClockTime/ClockView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClockData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClockData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/DataTime.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DI/Scope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DI/Scope.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Clock/ClockView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DI/Scope.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ClockData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Clock/Clock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Clock/SyncServerTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ClockTime/SyncServerTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ClockTime/SyncServer/ISyncServerTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ClockData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataClock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/DataClock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/IDataClock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ISetTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/DateTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ClockTime/SyncServer/SyncServerTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/IDateTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EntryPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DI/Scope.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/IUpdateTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/DataTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ClockTime/Clock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ClockTime/ClockView.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="2mfLPb8jLvC7a9GYdFhXCANEpj2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -59,6 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1727462662643</updated>
       <workItem from="1727462665161" duration="6123000" />
+      <workItem from="1727505125291" duration="4528000" />
     </task>
     <servers />
   </component>
@@ -67,13 +118,24 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1050" y="0" key="RiderGenerateDialog" timestamp="1727468339463">
+    <state x="1050" y="0" key="RiderGenerateDialog" timestamp="1727507506474">
       <screen x="0" y="0" width="2752" height="1104" />
     </state>
-    <state x="1050" y="0" key="RiderGenerateDialog/0.0.2752.1104@0.0.2752.1104" timestamp="1727468339463" />
+    <state x="1050" y="0" key="RiderGenerateDialog/0.0.2752.1104@0.0.2752.1104" timestamp="1727507506474" />
   </component>
 </project>

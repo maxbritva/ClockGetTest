@@ -7,11 +7,20 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Clock" t="Include">
+          <e p="ClockTime" t="Include">
             <e p="Clock.cs" t="Include" />
             <e p="ClockView.cs" t="Include" />
+            <e p="SyncServer" t="Include">
+              <e p="ISyncServerTime.cs" t="Include" />
+              <e p="SyncServerTime.cs" t="Include" />
+            </e>
           </e>
-          <e p="ClockData.cs" t="Include" />
+          <e p="Data" t="Include">
+            <e p="DataTime.cs" t="Include" />
+            <e p="IDateTime.cs" t="Include" />
+            <e p="ISetTime.cs" t="Include" />
+            <e p="IUpdateTime.cs" t="Include" />
+          </e>
           <e p="DI" t="Include">
             <e p="Scope.cs" t="Include" />
           </e>

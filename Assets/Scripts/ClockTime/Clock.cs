@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Threading;
 using Cysharp.Threading.Tasks;
+using Data;
 using UnityEngine;
 using VContainer.Unity;
 
-namespace Clock
+namespace ClockTime
 {
     public class Clock: IDisposable, IInitializable
     {
         private ClockView _clockView;
-        private ClockData _clockData;
+        private IUpdateTime _updateTime;
         private CancellationTokenSource _cts;
 
-        public Clock(ClockView clockView, ClockData clockData)
+        public Clock(ClockView clockView, IUpdateTime updateTime)
         {
-            _clockData = clockData;
+            _updateTime = updateTime;
             _clockView = clockView;
         }
         public void Dispose() => _cts?.Dispose();
@@ -25,7 +26,8 @@ namespace Clock
             _cts = new CancellationTokenSource();
             while (_cts.IsCancellationRequested == false)
             {
-                _clockView.SecondsArrow.transform.eulerAngles = new Vector3(0f,0f, - _clockData.CurrentSeconds * 360f / 60f);
+                _updateTime.UpdateSeconds();
+                _clockView.SecondsArrow.transform.eulerAngles = new Vector3(0f,0f, - _updateTime.GetCurrentSeconds() * 360f / 60f);
                 await UniTask.Delay(TimeSpan.FromSeconds(1f),  _cts.IsCancellationRequested);
             }
             _cts.Cancel();
