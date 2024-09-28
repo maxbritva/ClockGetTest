@@ -4,16 +4,18 @@ using Cysharp.Threading.Tasks;
 using Data;
 using UnityEngine;
 using UnityEngine.Networking;
+using VContainer.Unity;
 using DateTime = System.DateTime;
 
 namespace ClockTime.SyncServer
 {
-    public class SyncServerTime: ISyncServerTime
+    public class SyncServerTime: ISyncServerTime, IInitializable, IDisposable
     {
         private readonly string _serverUrl = "https://www.timeapi.io/api/time/current/zone?timeZone=Europe%2FMoscow";
-        private readonly IDateTime _dateTime;
-
-        public SyncServerTime(IDateTime dateTime) => _dateTime = dateTime;
+        private readonly IUpdateTime _dateTime;
+        public SyncServerTime(IUpdateTime dateTime) => _dateTime = dateTime;
+        public void Initialize() => _dateTime.OnHoursChanged += NeedToSync;
+        public void Dispose() => _dateTime.OnHoursChanged -= NeedToSync;
 
         public async UniTask GetDataFromServer()
         {
@@ -30,5 +32,6 @@ namespace ClockTime.SyncServer
 
             return DateTime.Parse ($"{date} {time}");
         }
+        private async void NeedToSync() => await GetDataFromServer();
     }
 }

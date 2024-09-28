@@ -1,15 +1,18 @@
 ﻿using ClockTime;
 using ClockTime.SyncServer;
+using Data;
 using VContainer.Unity;
 
 public class EntryPoint: IInitializable
 {
     private ISyncServerTime _syncServerTime;
     private Clock _clock;
+    private IUpdateTime _updateTime;
 
-    public EntryPoint(Clock clock, ISyncServerTime syncServerTime)
+    public EntryPoint(Clock clock, ISyncServerTime syncServerTime, IUpdateTime updateTime)
     {
         _clock = clock;
+        _updateTime = updateTime;
         _syncServerTime = syncServerTime;
     }
 
@@ -17,6 +20,7 @@ public class EntryPoint: IInitializable
     public async void Initialize()
     { 
         await _syncServerTime.GetDataFromServer();
-        await _clock.UpdateTime();
+        _updateTime.UpdateTime();
+        await _clock.StartUpdateTime();
     }
 }

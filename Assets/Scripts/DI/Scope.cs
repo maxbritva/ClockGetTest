@@ -15,7 +15,7 @@ namespace DI
             builder.Register<Clock>(Lifetime.Singleton);
             builder.RegisterEntryPoint<EntryPoint>();
             builder.Register<ISyncServerTime,SyncServerTime>(Lifetime.Singleton);
-            builder.Register<IDateTime, ISetTime, IUpdateTime, DataTime>(Lifetime.Singleton);
+            builder.Register<IUpdateTime, DataTime>(Lifetime.Singleton);
             builder.RegisterInstance(_clockView);
         }
     }

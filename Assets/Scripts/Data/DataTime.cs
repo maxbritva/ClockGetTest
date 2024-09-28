@@ -2,42 +2,18 @@
 
 namespace Data
 {
-    public class DataTime: IDateTime, ISetTime, IUpdateTime
+    public class DataTime: IUpdateTime
     {
         public event Action OnSecondsChanged;
         public event Action OnMinutesChanged;
         public event Action OnHoursChanged;
-        
-        // https://www.youtube.com/watch?v=QtwCrlqLe8o
-        
+        public event Action OnUpdatedTime;
+
         private DateTime _currentDateTime;
         private float _currentHours;
         private float _currentMinutes;
         private float _currentSeconds;
-
-        public void SetHourTime(float value)
-        {
-            if(CheckValidHours(value))
-                _currentHours = value;
-            else
-                throw new ArgumentOutOfRangeException(nameof(value));
-        }
-
-        public void SetMinutesTime(float value)
-        {
-            if(CheckValidSecondsMinutes(value))
-                _currentMinutes = value;
-            else
-                throw new ArgumentOutOfRangeException(nameof(value));
-        }
-
-        public void SetSecondsTime(float value)
-        {
-             if(CheckValidSecondsMinutes(value))
-                _currentSeconds = value;
-             else
-                 throw new ArgumentOutOfRangeException(nameof(value));
-        }
+     
         public void SetDateTime(DateTime target)
         {
             _currentDateTime = target;
@@ -45,7 +21,6 @@ namespace Data
             _currentMinutes = _currentDateTime.Minute;
             _currentSeconds = _currentDateTime.Second;
         }
-
         public float GetCurrentHours() => _currentHours;
 
         public float GetCurrentMinutes() => _currentMinutes;
@@ -54,32 +29,31 @@ namespace Data
 
         private void UpdateHours()
         {
-            if (CheckValidHours(_currentHours))
-            {
+            if (_currentHours < 12f)
                 _currentHours++;
-                OnHoursChanged?.Invoke();
-            }
             else
                 _currentHours = 0;
+            OnHoursChanged?.Invoke();  
         }
 
         private void UpdateMinutes()
         {
-            if(CheckValidSecondsMinutes(_currentMinutes))
+            if (_currentMinutes <= 58)
             {
-                OnMinutesChanged?.Invoke();
                 _currentMinutes++;
+                OnMinutesChanged?.Invoke();
             }
             else
             {
                 UpdateHours();
-                _currentMinutes = 0;
+                _currentMinutes= 0; 
+                OnMinutesChanged?.Invoke();
             }
         }
 
         public void UpdateSeconds()
         {
-            if (CheckValidSecondsMinutes(_currentSeconds))
+            if (_currentSeconds <= 58)
             {
                 _currentSeconds++;
                 OnSecondsChanged?.Invoke();
@@ -87,12 +61,10 @@ namespace Data
             else
             {
                 UpdateMinutes();
-                _currentSeconds = 1;
+                _currentSeconds = 0; 
+                OnSecondsChanged?.Invoke();
             }
         }
-
-        private bool CheckValidSecondsMinutes(float value) => value < 60 && value >= 0;
-        
-        private bool CheckValidHours(float value) =>  value < 24 && value >= 0;
+        public void UpdateTime() => OnUpdatedTime?.Invoke();
     }
 }
